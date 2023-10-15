@@ -260,7 +260,7 @@
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" id="subject">
+                            <input type="text" placeholder="Subject" id="subject" required>
                         </div>
                         <div class="field textarea">
                             <textarea cols="30" rows="10" placeholder="Message.." id="msg" required></textarea>
@@ -291,7 +291,7 @@
             var subject = $('#subject').val();
             var msg = $('#msg').val();
 
-            var BodyMsg ='Name: '+name+ '<br>Email: '+email+ '<br>Subject :'+subject+ '<br>Message: '+msg;
+            var BodyMsg ='Name: '+name+ '<br>Email: '+email+ '<br>Subject :'+subject+ '<br>Message :'+msg;
 
             Email.send({
                 SecureToken : "e666c2e3-04c6-4c73-a9dc-73ce9082c48d",
